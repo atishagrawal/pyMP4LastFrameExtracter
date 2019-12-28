@@ -47,19 +47,6 @@ def searchMp4Files(start_dir):
 
     print("Found: " + str(files.__len__()) + " files.")
 
-    # files = [f for f in os.listdir(start_dir) if
-    #          os.path.isfile(os.path.join(start_dir, f)) and f.endswith(".mp4")]
-    # print(files)
-    #
-    # for file in os.listdir(start_dir):
-    #     if file.endswith(pattern):
-    #         print(os.path.abspath(file))
-    #         print(os.path.join("/mydir", file))
-    #         files.extend(glob(os.path.join(dir, pattern)))
-    #
-    # for dir, _, _ in os.walk(start_dir):
-    #     files.extend(glob(os.path.join(dir, pattern)))
-
     # Iterate over all mp4 Files and extract the video Frames
     for individual_video in files:
         video_to_frames(individual_video)
